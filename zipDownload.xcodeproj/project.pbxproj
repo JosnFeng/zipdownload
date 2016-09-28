@@ -13,6 +13,7 @@
 		6916B7FF1D92548B0094F52A /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916B7FA1D92548B0094F52A /* WebViewJavascriptBridgeBase.m */; };
 		6916B8001D92548B0094F52A /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916B7FC1D92548B0094F52A /* WKWebViewJavascriptBridge.m */; };
 		6916B8031D92559F0094F52A /* NSDictionary+JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6916B8021D92559F0094F52A /* NSDictionary+JSONHelper.m */; };
+		692B63261D9BAE53009DE788 /* FileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 692B63251D9BAE53009DE788 /* FileHash.m */; };
 		69561EC41D90DA5200C1D371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69561EC31D90DA5200C1D371 /* main.m */; };
 		69561EC71D90DA5200C1D371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69561EC61D90DA5200C1D371 /* AppDelegate.m */; };
 		69561ECA1D90DA5200C1D371 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69561EC91D90DA5200C1D371 /* ViewController.m */; };
@@ -62,6 +63,8 @@
 		6916B7FC1D92548B0094F52A /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		6916B8011D92559F0094F52A /* NSDictionary+JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONHelper.h"; sourceTree = "<group>"; };
 		6916B8021D92559F0094F52A /* NSDictionary+JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONHelper.m"; sourceTree = "<group>"; };
+		692B63241D9BAE53009DE788 /* FileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHash.h; sourceTree = "<group>"; };
+		692B63251D9BAE53009DE788 /* FileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHash.m; sourceTree = "<group>"; };
 		69561EBF1D90DA5200C1D371 /* zipDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zipDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69561EC31D90DA5200C1D371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69561EC51D90DA5200C1D371 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,9 +150,19 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		692B63231D9BAE53009DE788 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				692B63241D9BAE53009DE788 /* FileHash.h */,
+				692B63251D9BAE53009DE788 /* FileHash.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		69561EB61D90DA5200C1D371 = {
 			isa = PBXGroup;
 			children = (
+				692B63231D9BAE53009DE788 /* Library */,
 				69561EC11D90DA5200C1D371 /* zipDownload */,
 				69561EDB1D90DA5200C1D371 /* zipDownloadTests */,
 				69561EE61D90DA5200C1D371 /* zipDownloadUITests */,
@@ -459,6 +472,7 @@
 				6916B7FF1D92548B0094F52A /* WebViewJavascriptBridgeBase.m in Sources */,
 				69561EC71D90DA5200C1D371 /* AppDelegate.m in Sources */,
 				69561F601D910F8700C1D371 /* ioapi.c in Sources */,
+				692B63261D9BAE53009DE788 /* FileHash.m in Sources */,
 				69561F621D910F8700C1D371 /* unzip.c in Sources */,
 				69561EC41D90DA5200C1D371 /* main.m in Sources */,
 				6916B8031D92559F0094F52A /* NSDictionary+JSONHelper.m in Sources */,
